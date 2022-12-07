@@ -6,9 +6,9 @@
 // prendo l'elemento dal dom
 const numberElement = document.getElementById('number')
 
-const dis3Element = 'fizz';
-const dis5Element = 'buzz';
-const dis15Element = 'fizzbuzz';
+const fizzElement = 'fizz';
+const buzzElement = 'buzz';
+const fizzbuzzElement = 'fizzbuzz';
 
 let i = '';
 
@@ -18,22 +18,22 @@ for (let i = 1; i <= 100; i++) {
     // sostituisco i divisibili per 15
     if (i % 15 === 0) {
         
-        numberElement.innerText += dis15Element;
-        console.log(dis15Element);
+        numberElement.innerText += fizzbuzzElement;
+        console.log(fizzbuzzElement);
 
     } 
     // sostituisco i divisibili per 5
     else if (i % 5 === 0) {
 
-        numberElement.innerText += dis5Element;
-        console.log(dis5Element);
+        numberElement.innerText += buzzElement;
+        console.log(buzzElement);
 
     } 
     // sostituisco i divisibili per 3
     else if (i % 3 === 0) {   
 
-        numberElement.innerText += dis3Element;
-        console.log(dis3Element);
+        numberElement.innerText += fizzElement;
+        console.log(fizzElement);
 
     } 
     // non sostituisco ninete 
