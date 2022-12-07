@@ -19,28 +19,31 @@ for (let i = 1; i <= 100; i++) {
     if (i % 15 === 0) {
         
         numberElement.innerText += fizzbuzzElement;
-        console.log(fizzbuzzElement);
+        // console.log(fizzbuzzElement);
 
     } 
+
     // sostituisco i divisibili per 5
     else if (i % 5 === 0) {
 
         numberElement.innerText += buzzElement;
-        console.log(buzzElement);
+        // console.log(buzzElement);
 
     } 
+
     // sostituisco i divisibili per 3
     else if (i % 3 === 0) {   
 
         numberElement.innerText += fizzElement;
-        console.log(fizzElement);
+        // console.log(fizzElement);
 
     } 
+    
     // non sostituisco ninete 
     else {
 
         numberElement.innerText += i;
-        console.log(i);
+        // console.log(i);
 
     };
 
