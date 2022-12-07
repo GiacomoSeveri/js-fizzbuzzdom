@@ -6,24 +6,37 @@
 // prendo l'elemento dal dom
 const numberElement = document.getElementById('number')
 
-const listElement = document.createElement('ul')
+const fizzElement = 'fizz';
+const buzzElement = 'buzz';
+const fizzbuzzElement = 'fizzbuzz';
 
 // creo il ciclo per i 100 numeri
 for (let i = 1; i <= 100; i++) {
-    console.log (i);
-    const listItem = document.createElement('li');
-    // sostituisco i divisibili per 3
-    if (i % 3 === 0) {
-        listItem.append("fizz ");
-        listElement.appendChild(listItem);
-    };
-    // sostituisco i divisibili per 5
-    // if (i % 5 === 0) {
-        
-    // };
+    
     // sostituisco i divisibili per 15
-    // if (i % 15 === 0) {
-        
-    // };
+    if (i % 3 === 0 && i % 5 === 0) {
+
+        console.log(fizzbuzzElement);
+
+    } 
+    // sostituisco i divisibili per 5
+    else if (i % 5 === 0) {
+
+        console.log(buzzElement);
+
+    } 
+    // sostituisco i divisibili per 3
+    else if (i % 3 === 0) {   
+
+         console.log(fizzElement);
+
+    } 
+    // non sostituisco ninete 
+    else {
+
+        console.log(i);
+
+    };
+
 }
 
