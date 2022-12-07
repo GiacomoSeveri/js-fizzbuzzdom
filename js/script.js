@@ -10,33 +10,38 @@ const dis3Element = 'fizz';
 const dis5Element = 'buzz';
 const dis15Element = 'fizzbuzz';
 
+let i = '';
+
 // creo il ciclo per i 100 numeri
 for (let i = 1; i <= 100; i++) {
     
     // sostituisco i divisibili per 15
     if (i % 15 === 0) {
-
+        
+        numberElement.innerText += dis15Element;
         console.log(dis15Element);
 
     } 
     // sostituisco i divisibili per 5
     else if (i % 5 === 0) {
 
+        numberElement.innerText += dis5Element;
         console.log(dis5Element);
 
     } 
     // sostituisco i divisibili per 3
     else if (i % 3 === 0) {   
 
-         console.log(dis3Element);
+        numberElement.innerText += dis3Element;
+        console.log(dis3Element);
 
     } 
     // non sostituisco ninete 
     else {
 
+        numberElement.innerText += i;
         console.log(i);
 
     };
 
 }
-
